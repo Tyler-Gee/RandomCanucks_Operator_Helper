@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,800' rel='stylesheet' type='text/css'>
+    <title>RandomCanucks Valkyrie Helper</title>
+
+    <!-- load external libraries like Bootstrap and JQuery-->
+    <script>window.$ = window.jQuery = require('jquery');</script>
+    <script>require('popper.js');</script>
+    <script>require('bootstrap');</script>
+
+    <!-- Load CSS Files-->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../node_modules/viewerjs/dist/viewer.css">
+
+    <!-- Load JavaScript Files-->
+    <script defer src="render.js"></script>
+    <script defer src="../node_modules/viewerjs/dist/viewer.js"></script>
+
+    </head>
+    <body>
+        <div id="main">
+            <header>
+                <div id="headerContent" class="headerContentContainer">
+                    <div class="attackDefendSwitchContainer">
+                        <label class="switch">
+                            <input id="attackDefendSwitch" type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+            </header>
+            <div class="mapSelectorContainer">
+                <div class="mapSelector">
+                    <div class="mapSelectButtonContainer">
+                        <button id="mapSelect_BankButton" class="mapSelectorButton">Bank</button>
+                    </div>
+                    <div class="mapSelectButtonContainer">
+                        <button id="mapSelect_BorderButton" class="mapSelectorButton">Border</button>
+                    </div>
+                    <div class="mapSelectButtonContainer">
+                        <button id="mapSelect_ChaletButton" class="mapSelectorButton">Chalet</button>
+                    </div>
+                    <div class="mapSelectButtonContainer">
+                        <button id="mapSelect_ClubhouseButton" class="mapSelectorButton">Clubhouse</button>
+                    </div>
+                    <div class="mapSelectButtonContainer">
+                        <button id="mapSelect_CoastlineButton" class="mapSelectorButton">Coastline</button>
+                    </div>
+                    <div class="mapSelectButtonContainer">
+                        <button id="mapSelect_ConsulateButton" class="mapSelectorButton">Consulate</button>
+                    </div>
+                    <div class="mapSelectButtonContainer">
+                        <button id="mapSelect_Kafe_DostoyevskyButton"class="mapSelectorButton">Kafe Dostoyevsky</button>
+                    </div>
+                    <div class="mapSelectButtonContainer">
+                        <button id="mapSelect_KanalButton" class="mapSelectorButton">Kanal</button>
+                    </div>
+                    <div class="mapSelectButtonContainer">
+                        <button id="mapSelect_OregonButton" class="mapSelectorButton">Oregon</button>
+                    </div>
+                    <div class="mapSelectButtonContainer">
+                        <button id="mapSelect_OutbackButton" class="mapSelectorButton">Outback</button>
+                    </div>
+                    <div class="mapSelectButtonContainer">
+                        <button id="mapSelect_Theme_ParkButton" class="mapSelectorButton">Theme Park</button>
+                    </div>
+                    <div class="mapSelectButtonContainer">
+                        <button id="mapSelect_VillaButton" class="mapSelectorButton">Villa</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" >&times;</a>
+            <div>
+                <p id="opSelectNavTitle">OPERATORS</p>
+            </div>
+            <div id="opSelect_ValkyrieButton" class="opSelectButton">
+                <div id="opSelect_ValkyrieButton_img"></div>
+                <div class="opSelectName"><p>Valkyrie</p></div>
+            </div>
+            <div id="opSelect_JagerButton" class="opSelectButton">
+                <div id="opSelect_JagerButton_img"></div>
+                <div class="opSelectName"><p>Jager</p></div>
+            </div>
+            <div id="opSelect_MuteButton" class="opSelectButton">
+                <div id="opSelect_MuteButton_img"></div>
+                <div class="opSelectName"><p>Mute</p></div>
+            </div>
+            <div id="opSelect_MiraButton" class="opSelectButton">
+                <div id="opSelect_MiraButton_img"></div>
+                <div class="opSelectName"><p>Mira</p></div>
+            </div>
+            <div id="opSelect_MaestroButton" class="opSelectButton">
+                <div id="opSelect_MaestroButton_img"></div>
+                <div class="opSelectName"><p>Maestro</p></div>
+            </div>
+            <div id="opSelect_MelusiButton" class="opSelectButton">
+                <div id="opSelect_MelusiButton_img"></div>
+                <div class="opSelectName"><p>Melusi</p></div>
+            </div>
+        </div>
+    </body>
+</html>

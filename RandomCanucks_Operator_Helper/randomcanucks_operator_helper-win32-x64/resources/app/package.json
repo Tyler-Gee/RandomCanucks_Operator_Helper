@@ -1,0 +1,52 @@
+{
+    "name": "randomcanucks_operator_helper",
+    "productName": "randomCanucks_operator_helper",
+    "version": "1.0.0",
+    "description": "This is a program designed to aid Valkyrie players in remembering where to put her Black-Eye for each ranked map",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "electron .",
+        "pack": "build --dir",
+        "pack-win": "build --win",
+        "dist": "electron-builder --dir --win"
+    },
+    "keywords": [],
+    "author": {
+        "name": "Tyler Gee",
+        "url": "https://github.com/TylerGeeCodeProjects/RandomCanucks_Valkyrie_Helper"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "bootstrap": "^4.4.1",
+        "file-system": "^2.2.2",
+        "fs": "0.0.1-security",
+        "jquery": "^3.5.1",
+        "modclean": "^3.0.0-beta.1",
+        "popper.js": "^1.16.1",
+        "viewerjs": "^1.5.0"
+    },
+    "devDependencies": {
+        "@electron-forge/cli": "^6.0.0-beta.51",
+        "@electron-forge/maker-deb": "^6.0.0-beta.51",
+        "@electron-forge/maker-rpm": "^6.0.0-beta.51",
+        "@electron-forge/maker-squirrel": "^6.0.0-beta.51",
+        "@electron-forge/maker-zip": "^6.0.0-beta.51",
+        "electron": "8.2.5",
+        "electron-builder": "^22.6.0",
+        "electron-packager": "^14.2.1"
+    },
+    "build": {
+        "appId": "com.electron.randomcanucksoperatorhelper",
+        "productName": "randomranucksoperatorhelper",
+        "directories": {
+            "output": "RandomCanucks_Operator_Helper"
+        },
+        "files": [
+            "**/*",
+            "icon.ico"
+        ],
+        "win": {
+            "icon": "build/icons.ico"
+        }
+    }
+}
