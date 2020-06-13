@@ -1,0 +1,4 @@
+owner: SomeRandomCanuck
+repo: Valkyrie-Program
+provider: github
+updaterCacheDirName: randomcanucks_operator_helper-updater
